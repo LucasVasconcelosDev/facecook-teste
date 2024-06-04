@@ -63,7 +63,7 @@ function Adicionar() {
 
       // Requisição POST para adicionar a receita
       const response = await axios.post(
-        "https://facecook-backend.blacksky-4c211341.australiaeast.azurecontainerapps.io/adicionar",
+        "https://facecook-teste.onrender.com/adicionar",
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },

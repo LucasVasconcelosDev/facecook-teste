@@ -30,7 +30,7 @@ function Editar() {
 
         // Requisição GET para obter os detalhes da receita com o ID específico
         const response = await axios.get(
-          `https://facecook-backend.blacksky-4c211341.australiaeast.azurecontainerapps.io/editar/${id}`
+          `https://facecook-teste.onrender.com/editar/${id}`
         );
   
         // Extrai os dados da receita da resposta
@@ -98,7 +98,7 @@ function Editar() {
 
       // Requisição PUT para atualizar a receita
       const response = await axios.put(
-        `https://facecook-backend.blacksky-4c211341.australiaeast.azurecontainerapps.io/editar/${id}`,
+        `https://facecook-teste.onrender.com/editar/${id}`,
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },

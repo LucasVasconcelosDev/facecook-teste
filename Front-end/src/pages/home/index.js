@@ -20,7 +20,7 @@ function Home() {
       try {
 
         // Fazendo requisição GET para buscar os dados das receitas do backend
-        const response = await axios.get("https://facecook-backend.blacksky-4c211341.australiaeast.azurecontainerapps.io/");
+        const response = await axios.get("https://facecook-teste.onrender.com/");
 
         // Se a requisição for bem-sucedida (código de status 200), atualiza o estado com os dados das receitas
         if (response.status === 200) {
@@ -56,7 +56,7 @@ function Home() {
       try {
 
         // Fazendo requisição DELETE para excluir a receita do backend
-        const response = await axios.delete(`https://facecook-backend.blacksky-4c211341.australiaeast.azurecontainerapps.io/${receitaId}`);
+        const response = await axios.delete(`https://facecook-teste.onrender.com/${receitaId}`);
 
         // Se a requisição for bem-sucedida, atualiza o estado filtrando a receita excluída
         if (response.status === 200) {
